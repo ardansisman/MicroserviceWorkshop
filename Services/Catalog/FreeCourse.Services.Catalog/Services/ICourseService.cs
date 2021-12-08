@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace FreeCourse.Services.Catalog.Services
 {
-    interface ICourseService
+    public interface ICourseService
     {
-        Task<Response<List<CourseDto>>> GetALlAsync();
+        Task<Response<List<CourseDto>>> GetAllAsync();
         Task<Response<CourseDto>> GetByIdAsync(string id);
         Task<Response<List<CourseDto>>> GetAllByUserId(string userId);
         Task<Response<CourseDto>> CreateAsyn(CourseCreateDto courseCreateDto);
